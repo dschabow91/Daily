@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shift Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Work Report & PM Dashboard</header>
+    <div class="container">
+        <h1>Submit Daily Report</h1>
+        <form id="reportForm">
+            <input type="text" name="shift" placeholder="Shift (Day/Night)" required>
+            <textarea name="content" placeholder="Report details..." required></textarea>
+            <input type="date" name="date" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Preventive Maintenance</h2>
+        <form id="pmForm">
+            <input type="text" name="title" placeholder="PM Task Title" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <input type="date" name="due_date" required>
+            <button type="submit">Add PM Task</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
